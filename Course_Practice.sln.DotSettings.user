@@ -1,0 +1,7 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=71a7cc07_002D7f84_002D43e9_002Db1b9_002Dd4e26911976b/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="JQueryUI_ChooseDate_Success" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::579C5B6C-FE6E-409D-9CA6-6623FAFA67D7::net6.0::Practice1.Calendar_Tests.JQueryUI_ChooseDate_Success&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::579C5B6C-FE6E-409D-9CA6-6623FAFA67D7::net6.0::Practice1.Labirint_Tests.Labirint_AddBookAndChooseDeliveryService_Success&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
