@@ -49,7 +49,7 @@ namespace Practice1
             Assert.Multiple(() =>
             {
                 Assert.That(choosenDays.Count == 1, "Не выбран ни один день");
-                Assert.That(choosenDays[0].GetAttribute("data-date") == $"{futureDay}");
+                Assert.That(choosenDays[0].GetAttribute("data-date") == $"{futureDay}", "Выбран неправильный день");
             });
         }
 
