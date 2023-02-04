@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "dad/N4g4l9STL5D5TXxRHA49CKzELM7fa9K9pkqe02xpNSQC+5606aRTpXWDTxk1MSJ3QSVhDWhHCfy0xGx2/Q==",
+  "dgSpecHash": "hBKv7bw1VWAvd272TILO1ng6qiUcNqcWfZ7LZ5NkI3YYS/NYESM5WEmWxNZSc2pnHdevv15SLsi1HSNaqqHtlg==",
   "success": true,
   "projectFilePath": "C:\\Users\\mnoskov\\SeleniumPractice\\SeleniumHomework\\SeleniumTests\\SeleniumTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mnoskov\\.nuget\\packages\\anglesharp\\0.17.1\\anglesharp.0.17.1.nupkg.sha512",
+    "C:\\Users\\mnoskov\\.nuget\\packages\\dotnetseleniumextras.waithelpers\\3.11.0\\dotnetseleniumextras.waithelpers.3.11.0.nupkg.sha512",
     "C:\\Users\\mnoskov\\.nuget\\packages\\fluentassertions\\6.8.0\\fluentassertions.6.8.0.nupkg.sha512",
     "C:\\Users\\mnoskov\\.nuget\\packages\\microsoft.codecoverage\\17.4.1\\microsoft.codecoverage.17.4.1.nupkg.sha512",
     "C:\\Users\\mnoskov\\.nuget\\packages\\microsoft.net.test.sdk\\17.4.1\\microsoft.net.test.sdk.17.4.1.nupkg.sha512",

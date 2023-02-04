@@ -208,3 +208,4 @@ C:\Users\mnoskov\SeleniumPractice\SeleniumHomework\SeleniumTests\obj\Debug\net6.
 C:\Users\mnoskov\SeleniumPractice\SeleniumHomework\SeleniumTests\obj\Debug\net6.0\SeleniumTests.pdb
 C:\Users\mnoskov\SeleniumPractice\SeleniumHomework\SeleniumTests\obj\Debug\net6.0\SeleniumTests.genruntimeconfig.cache
 C:\Users\mnoskov\SeleniumPractice\SeleniumHomework\SeleniumTests\obj\Debug\net6.0\ref\SeleniumTests.dll
+C:\Users\mnoskov\SeleniumPractice\SeleniumHomework\SeleniumTests\bin\Debug\net6.0\SeleniumExtras.WaitHelpers.dll

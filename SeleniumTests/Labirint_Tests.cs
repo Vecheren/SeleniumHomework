@@ -3,6 +3,7 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Interactions;
 using OpenQA.Selenium.Support.UI;
+using SeleniumExtras.WaitHelpers;
 
 namespace Practice1
 {
@@ -17,13 +18,19 @@ namespace Practice1
         public static By goToCartLocator = By.CssSelector(".btn-more[href = '/cart/']");
         public static By goToPaymentLocator = By.CssSelector("#cart-total-default button");
         public static By chooseNewPlaceLocator = By.CssSelector(".delivery__profiles-change-btn");
-        public static By deliveryTabLocator = By.XPath("//div[@class = 'div-select-text-left-header'][contains(text(), 'Курьер')]");
+
+        public static By deliveryTabLocator =
+            By.XPath("//div[@class = 'div-select-text-left-header'][contains(text(), 'Курьер')]");
+
         public static By addressInputLocator = By.Id("deliveryAddress");
         public static By addressWarningLocator = By.CssSelector(".error-informer");
         public static By deliveryServiceLocator = By.CssSelector(".cdp-container");
+
         public static By chooseDeliveryLocator = By.CssSelector(".button-save");
-        public static By deliveryModalLocator = By.CssSelector(".container");
-        
+
+        // public static By deliveryModalLocator = By.CssSelector(".container");
+        public static By deliveryModalLocator = By.CssSelector(".container .modal-container");
+
         public static WebDriverWait? wait;
 
         [SetUp]
@@ -31,11 +38,12 @@ namespace Practice1
         {
             var options = new ChromeOptions();
             options.AddArgument("--start-maximized");
+            options.AddArgument("--incognito");
             driver = new ChromeDriver("chromedriver.exe", options);
             wait = new WebDriverWait(driver, TimeSpan.FromSeconds(5));
-            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(5); // неявное
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10); // неявное
         }
-        
+
         [Test]
         public void Labirint_AddBookAndChooseDeliveryService_Success()
         {
@@ -45,9 +53,10 @@ namespace Practice1
                 .MoveToElement(driver.FindElement(booksSelectorLocator))
                 .Build()
                 .Perform();
-            wait.Until((e) => e.FindElement(allBooksLinkLocator)).Click();
+            driver.FindElement(allBooksLinkLocator).Click();
             driver.FindElement(addToCartLocator).Click();
             driver.FindElement(goToCartLocator).Click();
+            wait.Until(ExpectedConditions.ElementIsVisible(goToPaymentLocator));
             driver.FindElement(goToPaymentLocator).Click();
             driver.FindElement(chooseNewPlaceLocator).Click();
             driver.FindElement(deliveryTabLocator).Click();
@@ -56,10 +65,14 @@ namespace Practice1
             Assert.That(driver.FindElement(addressWarningLocator).Displayed,
                 "Не отобразилось предупреждение об ошибочном адресе");
             driver.FindElement(addressInputLocator).Clear();
-            driver.FindElement(addressInputLocator).SendKeys("проспект Ленина, 49, Екатеринбург" + Keys.Enter);
+            driver.FindElement(addressInputLocator)
+                .SendKeys("проспект Ленина, 50, Екатеринбург, Свердловская область" + Keys.Enter);
+            wait.Until(ExpectedConditions.ElementIsVisible(deliveryServiceLocator));
             driver.FindElement(deliveryServiceLocator).Click();
             driver.FindElement(chooseDeliveryLocator).Click();
-            wait.Until((e) => !e.FindElement(deliveryModalLocator).Displayed);
+            Assert.DoesNotThrow(() =>
+                    wait.Until(ExpectedConditions.InvisibilityOfElementLocated(deliveryModalLocator)),
+                "После выбора доставки остались на экране выбора");
         }
 
         [TearDown]
