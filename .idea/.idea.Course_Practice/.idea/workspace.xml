@@ -2,27 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8814e098-0fd9-45da-bc77-81b559cbb04e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/SeleniumTests/JQueryCalendar_Tests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Course_Practice/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Course_Practice/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Course_Practice.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/Course_Practice.sln.DotSettings.user" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SeleniumTests/LabirintTestBase.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SeleniumTests/Labirint_Tests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SeleniumTests/Labirint_Tests.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SeleniumTests/SeleniumTests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/SeleniumTests/SeleniumTests.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumTests/bin/Debug/net6.0/SeleniumTests.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/SeleniumTests/bin/Debug/net6.0/SeleniumTests.deps.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumTests/bin/Debug/net6.0/SeleniumTests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/SeleniumTests/bin/Debug/net6.0/SeleniumTests.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumTests/bin/Debug/net6.0/SeleniumTests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/SeleniumTests/bin/Debug/net6.0/SeleniumTests.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumTests/obj/Debug/net6.0/SeleniumTests.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/SeleniumTests/obj/Debug/net6.0/SeleniumTests.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumTests/obj/Debug/net6.0/SeleniumTests.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/SeleniumTests/obj/Debug/net6.0/SeleniumTests.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumTests/obj/Debug/net6.0/SeleniumTests.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/SeleniumTests/obj/Debug/net6.0/SeleniumTests.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumTests/obj/Debug/net6.0/SeleniumTests.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/SeleniumTests/obj/Debug/net6.0/SeleniumTests.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumTests/obj/Debug/net6.0/SeleniumTests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/SeleniumTests/obj/Debug/net6.0/SeleniumTests.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumTests/obj/Debug/net6.0/SeleniumTests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/SeleniumTests/obj/Debug/net6.0/SeleniumTests.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumTests/obj/Debug/net6.0/ref/SeleniumTests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/SeleniumTests/obj/Debug/net6.0/ref/SeleniumTests.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumTests/obj/Debug/net6.0/refint/SeleniumTests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/SeleniumTests/obj/Debug/net6.0/refint/SeleniumTests.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumTests/obj/SeleniumTests.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/SeleniumTests/obj/SeleniumTests.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumTests/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/SeleniumTests/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumTests/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/SeleniumTests/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumTests/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/SeleniumTests/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumTests/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/SeleniumTests/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +48,7 @@
       <workItem from="1675185470365" duration="17641000" />
       <workItem from="1675264357997" duration="2558000" />
       <workItem from="1675327330416" duration="6849000" />
+      <workItem from="1675536725551" duration="1112000" />
     </task>
     <servers />
   </component>

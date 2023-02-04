@@ -1,6 +1,5 @@
 ﻿using NUnit.Framework;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Interactions;
 using OpenQA.Selenium.Support.UI;
 using SeleniumExtras.WaitHelpers;
@@ -8,9 +7,8 @@ using SeleniumExtras.WaitHelpers;
 namespace Practice1
 {
     [TestFixture]
-    public class Labirint_Tests
+    public class Labirint_Tests : LabirintTestBase
     {
-        private static IWebDriver driver;
         public static By acceptCookiesLocator = By.CssSelector(".js-cookie-policy-agree");
         public static By booksSelectorLocator = By.XPath("//*[@href = '/books/'][text() = 'Книги']");
         public static By allBooksLinkLocator = By.XPath("//*[@href = '/books/'][text() = 'Все книги']");
@@ -18,32 +16,14 @@ namespace Practice1
         public static By goToCartLocator = By.CssSelector(".btn-more[href = '/cart/']");
         public static By goToPaymentLocator = By.CssSelector("#cart-total-default button");
         public static By chooseNewPlaceLocator = By.CssSelector(".delivery__profiles-change-btn");
-
         public static By deliveryTabLocator =
             By.XPath("//div[@class = 'div-select-text-left-header'][contains(text(), 'Курьер')]");
-
         public static By addressInputLocator = By.Id("deliveryAddress");
         public static By addressWarningLocator = By.CssSelector(".error-informer");
         public static By deliveryServiceLocator = By.CssSelector(".cdp-container");
-
         public static By chooseDeliveryLocator = By.CssSelector(".button-save");
-
-        // public static By deliveryModalLocator = By.CssSelector(".container");
         public static By deliveryModalLocator = By.CssSelector(".container .modal-container");
-
-        public static WebDriverWait? wait;
-
-        [SetUp]
-        public void SetUp()
-        {
-            var options = new ChromeOptions();
-            options.AddArgument("--start-maximized");
-            options.AddArgument("--incognito");
-            driver = new ChromeDriver("chromedriver.exe", options);
-            wait = new WebDriverWait(driver, TimeSpan.FromSeconds(5));
-            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10); // неявное
-        }
-
+        
         [Test]
         public void Labirint_AddBookAndChooseDeliveryService_Success()
         {
@@ -75,11 +55,5 @@ namespace Practice1
                 "После выбора доставки остались на экране выбора");
         }
 
-        [TearDown]
-        public void TearDown()
-        {
-            driver.Quit();
-            driver = null;
-        }
     }
 }
