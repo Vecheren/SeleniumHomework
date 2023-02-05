@@ -16,10 +16,10 @@ namespace Practice1
             var homePage = new HomePage(driver, wait);
             homePage.OpenPage();
             homePage.AddBlockToCard();
-            
+
             var cardPage = new CardPage(driver, wait);
             cardPage.OpenPage();
-            
+
             var deliveryPage = new DeliveryPage(driver, wait);
             deliveryPage.SwitchToDeliveryTab();
             deliveryPage.FillInAddress(true);
@@ -34,10 +34,10 @@ namespace Practice1
             var homePage = new HomePage(driver, wait);
             homePage.OpenPage();
             homePage.AddBlockToCard();
-            
+
             var cardPage = new CardPage(driver, wait);
             cardPage.OpenPage();
-            
+
             var deliveryPage = new DeliveryPage(driver, wait);
             deliveryPage.SwitchToDeliveryTab();
             deliveryPage.FillInAddress(false);

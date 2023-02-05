@@ -20,8 +20,10 @@ public class DeliveryPage : PageBase
     private string invalidAddress = "невалидный адрес какой-то";
     private string validAddress = "проспект Ленина 50 Екатеринбург Свердловская область";
 
-    public DeliveryPage(IWebDriver driver, WebDriverWait? wait) : base(driver, wait){}
-    
+    public DeliveryPage(IWebDriver driver, WebDriverWait? wait) : base(driver, wait)
+    {
+    }
+
     public void SwitchToDeliveryTab()
     {
         driver.FindElement(deliveryTabLocator).Click();

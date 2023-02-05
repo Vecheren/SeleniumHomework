@@ -11,7 +11,7 @@ public abstract class PageBase
 {
     protected IWebDriver driver;
     protected WebDriverWait? wait;
-    
+
     public PageBase(IWebDriver _driver, WebDriverWait? _wait)
     {
         driver = _driver;

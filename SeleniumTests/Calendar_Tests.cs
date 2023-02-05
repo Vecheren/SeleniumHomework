@@ -24,7 +24,7 @@ namespace Practice1
             options.AddArgument("--start-maximized");
             driver = new ChromeDriver("chromedriver.exe", options);
             wait = new WebDriverWait(driver, TimeSpan.FromSeconds(5));
-            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(5); 
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(5);
         }
 
         [Test]

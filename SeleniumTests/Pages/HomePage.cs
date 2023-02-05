@@ -34,7 +34,6 @@ public class HomePage : PageBase
             .MoveToElement(driver.FindElement(booksSelectorLocator))
             .Build()
             .Perform();
-        
         driver.FindElement(allBooksLinkLocator).Click();
     }
 }
