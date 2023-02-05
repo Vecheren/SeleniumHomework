@@ -2,9 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8814e098-0fd9-45da-bc77-81b559cbb04e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/SeleniumTests/LabirintTestBase.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SeleniumTests/Pages/CardPage.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SeleniumTests/Pages/DeliveryPage.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SeleniumTests/Pages/HomePage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Course_Practice.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/Course_Practice.sln.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SeleniumTests/LabirintTestBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SeleniumTests/LabirintTestBase.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SeleniumTests/Labirint_Tests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SeleniumTests/Labirint_Tests.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SeleniumTests/SeleniumTests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/SeleniumTests/SeleniumTests.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SeleniumTests/bin/Debug/net6.0/SeleniumTests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/SeleniumTests/bin/Debug/net6.0/SeleniumTests.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SeleniumTests/bin/Debug/net6.0/SeleniumTests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/SeleniumTests/bin/Debug/net6.0/SeleniumTests.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SeleniumTests/obj/Debug/net6.0/SeleniumTests.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/SeleniumTests/obj/Debug/net6.0/SeleniumTests.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SeleniumTests/obj/Debug/net6.0/SeleniumTests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/SeleniumTests/obj/Debug/net6.0/SeleniumTests.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SeleniumTests/obj/Debug/net6.0/SeleniumTests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/SeleniumTests/obj/Debug/net6.0/SeleniumTests.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SeleniumTests/obj/Debug/net6.0/ref/SeleniumTests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/SeleniumTests/obj/Debug/net6.0/ref/SeleniumTests.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SeleniumTests/obj/Debug/net6.0/refint/SeleniumTests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/SeleniumTests/obj/Debug/net6.0/refint/SeleniumTests.dll" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +59,7 @@
       <workItem from="1675185470365" duration="17641000" />
       <workItem from="1675264357997" duration="2558000" />
       <workItem from="1675327330416" duration="6849000" />
-      <workItem from="1675536725551" duration="1112000" />
+      <workItem from="1675536725551" duration="6257000" />
     </task>
     <servers />
   </component>
@@ -58,5 +69,24 @@
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/SeleniumTests/Pages/DeliveryPage.cs</url>
+          <line>42</line>
+          <properties documentPath="C:\Users\mnoskov\SeleniumPractice\SeleniumHomework\SeleniumTests\Pages\DeliveryPage.cs" initialLine="42" containingFunctionPresentation="method 'FillInAddress'">
+            <startOffsets>
+              <option value="1477" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1498" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -9,8 +9,8 @@ namespace Practice1;
 
 public abstract class LabirintTestBase
 {
-    public static IWebDriver driver;
-    public static WebDriverWait? wait;
+    protected static IWebDriver driver;
+    protected static WebDriverWait? wait;
     
     [SetUp]
     public void SetUp()
@@ -20,9 +20,8 @@ public abstract class LabirintTestBase
         options.AddArgument("--incognito");
         driver = new ChromeDriver("chromedriver.exe", options);
         wait = new WebDriverWait(driver, TimeSpan.FromSeconds(5));
-        driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10); // неявное
+        driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(5); 
     }
-    
     
     [TearDown]
     public void TearDown()

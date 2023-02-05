@@ -4,6 +4,7 @@
     &lt;TestId&gt;NUnit3x::579C5B6C-FE6E-409D-9CA6-6623FAFA67D7::net6.0::Practice1.Calendar_Tests.JQueryUI_ChooseDate_Success&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;NUnit3x::579C5B6C-FE6E-409D-9CA6-6623FAFA67D7::net6.0::Practice1.Labirint_Tests.Labirint_AddBookAndChooseDeliveryService_Success&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;NUnit3x::579C5B6C-FE6E-409D-9CA6-6623FAFA67D7::net6.0::Practice1.JQueryCalendar_Tests.JQueryUI_ChooseDate_Success&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::579C5B6C-FE6E-409D-9CA6-6623FAFA67D7::net6.0::Practice1.Labirint_Tests.Labirint_UseInvalidAddress_AddressValidation&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestRunner/SpawnedProcessesKnownList/=chromedriver_002Eexe/@EntryIndexedValue">KillOrphaned</s:String>
