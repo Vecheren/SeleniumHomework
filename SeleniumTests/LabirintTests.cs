@@ -41,7 +41,13 @@ namespace Practice1
             var deliveryPage = new DeliveryPage(driver, wait);
             deliveryPage.SwitchToDeliveryTab();
             deliveryPage.FillInAddress(false);
-            Assert.IsTrue(deliveryPage.IsVisibleAddressError(), "Должно быть предупреждение об ошибочном адресе");
+            Assert.Multiple(() =>
+            {
+                Assert.IsTrue(deliveryPage.IsVisibleAddressError(), "Нет предупреждения об ошибочном адресе");
+                Assert.AreEqual("Уточните адрес для доставки курьером", deliveryPage.GetAddressErrorText(), "Некорректный текст ошибки при неправильном адресе");
+            });
+            
+            
         }
     }
 }

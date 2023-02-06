@@ -30,6 +30,7 @@ public class DeliveryPage : PageBase
     }
 
     public bool IsVisibleAddressError() => driver.FindElement(addressWarningLocator).Displayed;
+    public string GetAddressErrorText() => driver.FindElement(addressWarningLocator).Text;
 
     public void FillInAddress(bool addressIsValid)
     {
