@@ -22,9 +22,9 @@ public class DeliveryPage : PageBase
     public bool IsVisibleAddressError() => driver.FindElement(addressWarningLocator).Displayed;
     public string GetAddressErrorText() => driver.FindElement(addressWarningLocator).Text;
 
-    public void FillInAddress(bool addressIsValid)
+    public void FillInAddress(bool useValidAddress)
     {
-        var address = (addressIsValid) ? ValidAddress : InvalidAddress;
+        var address = (useValidAddress) ? ValidAddress : InvalidAddress;
         var addressInput = driver.FindElement(addressInputLocator);
         wait.Until(ExpectedConditions.ElementIsVisible(addressWarningLocator));
         addressInput.Clear();
