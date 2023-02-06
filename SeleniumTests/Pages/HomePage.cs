@@ -9,16 +9,10 @@ namespace Practice1.Pages;
 
 public class HomePage : PageBase
 {
-    private const string url = "https://www.labirint.ru/";
-    private By acceptCookiesLocator = By.CssSelector(".js-cookie-policy-agree");
-    private By booksSelectorLocator = By.CssSelector(".b-header-b-menu-e-text[href = '/books/']");
-    private By allBooksLinkLocator = By.CssSelector(".b-toggle-container [href = '/books/']");
-    private By addToCartLocator = By.XPath("(//*[@data-idtov])[1]");
-    private By goToCartLocator = By.CssSelector(".btn-more[href = '/cart/']");
-    private By goToPaymentLocator = By.CssSelector("#cart-total-default button");
+    public HomePage(IWebDriver driver, WebDriverWait? wait) : base(driver, wait)
+    {
+    }
 
-    public HomePage(IWebDriver driver, WebDriverWait? wait) : base(driver, wait){}
-    
     public void AddBookToCard()
     {
         driver.FindElement(addToCartLocator).Click();
@@ -37,4 +31,12 @@ public class HomePage : PageBase
             .Perform();
         driver.FindElement(allBooksLinkLocator).Click();
     }
+
+    private const string url = "https://www.labirint.ru/";
+    private By acceptCookiesLocator = By.CssSelector(".js-cookie-policy-agree");
+    private By booksSelectorLocator = By.CssSelector(".b-header-b-menu-e-text[href = '/books/']");
+    private By allBooksLinkLocator = By.CssSelector(".b-toggle-container [href = '/books/']");
+    private By addToCartLocator = By.XPath("(//*[@data-idtov])[1]");
+    private By goToCartLocator = By.CssSelector(".btn-more[href = '/cart/']");
+    private By goToPaymentLocator = By.CssSelector("#cart-total-default button");
 }

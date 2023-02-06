@@ -9,32 +9,22 @@ namespace Practice1.Pages;
 
 public class DeliveryPage : PageBase
 {
-    private By deliveryTabLocator =
-        By.XPath("//div[@class = 'div-select-text-left-header'][contains(text(), 'Курьер')]");
-
-    private By addressInputLocator = By.Id("deliveryAddress");
-    private By addressWarningLocator = By.CssSelector(".error-informer");
-    private By deliveryServiceLocator = By.CssSelector(".cdp-container");
-    private By chooseDeliveryLocator = By.CssSelector(".button-save");
-    private By deliveryModalLocator = By.CssSelector(".container .modal-container");
-    private string invalidAddress = "невалидный адрес какой-то";
-    private string validAddress = "проспект Ленина 50 Екатеринбург Свердловская область";
-
     public DeliveryPage(IWebDriver driver, WebDriverWait? wait) : base(driver, wait)
     {
     }
 
-    public void SwitchToDeliveryTab()
-    {
-        driver.FindElement(deliveryTabLocator).Click();
-    }
+    public string ValidAddress { get; set; } = "проспект Ленина 50 Екатеринбург Свердловская область";
+
+    private string InvalidAddress { get; set; } = "невалидный адрес какой-то";
+
+    public void SwitchToDeliveryTab() => driver.FindElement(deliveryTabLocator).Click();
 
     public bool IsVisibleAddressError() => driver.FindElement(addressWarningLocator).Displayed;
     public string GetAddressErrorText() => driver.FindElement(addressWarningLocator).Text;
 
     public void FillInAddress(bool addressIsValid)
     {
-        var address = (addressIsValid) ? validAddress : invalidAddress;
+        var address = (addressIsValid) ? ValidAddress : InvalidAddress;
         var addressInput = driver.FindElement(addressInputLocator);
         wait.Until(ExpectedConditions.ElementIsVisible(addressWarningLocator));
         addressInput.Clear();
@@ -52,4 +42,13 @@ public class DeliveryPage : PageBase
         driver.FindElement(chooseDeliveryLocator).Click();
         wait.Until(ExpectedConditions.InvisibilityOfElementLocated(deliveryModalLocator));
     }
+
+    private By deliveryTabLocator =
+        By.XPath("//div[@class = 'div-select-text-left-header'][contains(text(), 'Курьер')]");
+
+    private By addressInputLocator = By.Id("deliveryAddress");
+    private By addressWarningLocator = By.CssSelector(".error-informer");
+    private By deliveryServiceLocator = By.CssSelector(".cdp-container");
+    private By chooseDeliveryLocator = By.CssSelector(".button-save");
+    private By deliveryModalLocator = By.CssSelector(".container .modal-container");
 }

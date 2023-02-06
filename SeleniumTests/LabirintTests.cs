@@ -44,10 +44,9 @@ namespace Practice1
             Assert.Multiple(() =>
             {
                 Assert.IsTrue(deliveryPage.IsVisibleAddressError(), "Нет предупреждения об ошибочном адресе");
-                Assert.AreEqual("Уточните адрес для доставки курьером", deliveryPage.GetAddressErrorText(), "Некорректный текст ошибки при неправильном адресе");
+                Assert.AreEqual("Уточните адрес для доставки курьером", deliveryPage.GetAddressErrorText(),
+                    "Некорректный текст ошибки при неправильном адресе");
             });
-            
-            
         }
     }
 }

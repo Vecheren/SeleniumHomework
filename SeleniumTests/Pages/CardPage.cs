@@ -9,8 +9,6 @@ namespace Practice1.Pages;
 
 public class CardPage : PageBase
 {
-    private By chooseNewPlaceLocator = By.CssSelector(".delivery__profiles-change-btn");
-
     public CardPage(IWebDriver driver, WebDriverWait? wait) : base(driver, wait)
     {
     }
@@ -19,4 +17,6 @@ public class CardPage : PageBase
     {
         driver.FindElement(chooseNewPlaceLocator).Click();
     }
+
+    private By chooseNewPlaceLocator = By.CssSelector(".delivery__profiles-change-btn");
 }
