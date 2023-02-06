@@ -9,6 +9,7 @@ namespace Practice1.Pages;
 
 public class HomePage : PageBase
 {
+    private const string url = "https://www.labirint.ru/";
     private By acceptCookiesLocator = By.CssSelector(".js-cookie-policy-agree");
     private By booksSelectorLocator = By.CssSelector(".b-header-b-menu-e-text[href = '/books/']");
     private By allBooksLinkLocator = By.CssSelector(".b-toggle-container [href = '/books/']");
@@ -28,7 +29,7 @@ public class HomePage : PageBase
 
     public void OpenPage()
     {
-        driver.Navigate().GoToUrl("https://www.labirint.ru/");
+        driver.Navigate().GoToUrl(url);
         driver.FindElement(acceptCookiesLocator).Click();
         new Actions(driver)
             .MoveToElement(driver.FindElement(booksSelectorLocator))
