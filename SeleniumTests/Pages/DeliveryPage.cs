@@ -15,7 +15,7 @@ public class DeliveryPage : PageBase
 
     public string ValidAddress { get; set; } = "проспект Ленина 50 Екатеринбург Свердловская область";
 
-    private string InvalidAddress { get; set; } = "невалидный адрес какой-то";
+    public string InvalidAddress { get; set; } = "невалидный адрес какой-то";
 
     public void SwitchToDeliveryTab() => driver.FindElement(deliveryTabLocator).Click();
 
