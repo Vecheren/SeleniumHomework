@@ -18,7 +18,7 @@ public class HomePage : PageBase
 
     public HomePage(IWebDriver driver, WebDriverWait? wait) : base(driver, wait){}
     
-    public void AddBlockToCard()
+    public void AddBookToCard()
     {
         driver.FindElement(addToCartLocator).Click();
         driver.FindElement(goToCartLocator).Click();

@@ -8,14 +8,14 @@ using SeleniumExtras.WaitHelpers;
 namespace Practice1
 {
     [TestFixture]
-    public class Labirint_Tests : LabirintTestBase
+    public class LabirintTests : LabirintTestBase
     {
         [Test]
         public void Labirint_AddBookAndChooseDeliveryService_Success()
         {
             var homePage = new HomePage(driver, wait);
             homePage.OpenPage();
-            homePage.AddBlockToCard();
+            homePage.AddBookToCard();
 
             var cardPage = new CardPage(driver, wait);
             cardPage.OpenPage();
@@ -33,7 +33,7 @@ namespace Practice1
         {
             var homePage = new HomePage(driver, wait);
             homePage.OpenPage();
-            homePage.AddBlockToCard();
+            homePage.AddBookToCard();
 
             var cardPage = new CardPage(driver, wait);
             cardPage.OpenPage();

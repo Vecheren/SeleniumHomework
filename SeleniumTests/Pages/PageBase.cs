@@ -12,9 +12,9 @@ public abstract class PageBase
     protected IWebDriver driver;
     protected WebDriverWait? wait;
 
-    public PageBase(IWebDriver _driver, WebDriverWait? _wait)
+    public PageBase(IWebDriver driver, WebDriverWait? wait)
     {
-        driver = _driver;
-        wait = _wait;
+        this.driver = driver;
+        this.wait = wait;
     }
 }
