@@ -22,8 +22,8 @@ public class DeliveryPage : PageBase
 
     public void FillInAddress()
     {
-        var addressInput = driver.FindElement(addressInputLocator);
         wait.Until(ExpectedConditions.ElementIsVisible(addressWarningLocator));
+        var addressInput = driver.FindElement(addressInputLocator);
         addressInput.Clear();
         addressInput.SendKeys(Address + Keys.Enter);
     }
