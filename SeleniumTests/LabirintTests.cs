@@ -22,7 +22,7 @@ namespace Practice1
 
             var deliveryPage = new DeliveryPage(driver, wait);
             deliveryPage.SwitchToDeliveryTab();
-            deliveryPage.FillInAddress(true);
+            deliveryPage.FillInAddress();
 
             deliveryPage.ChooseDeliveryService();
             Assert.DoesNotThrow(() => deliveryPage.ReturnToCard(), "После выбора доставки остались на экране выбора");
@@ -40,7 +40,8 @@ namespace Practice1
 
             var deliveryPage = new DeliveryPage(driver, wait);
             deliveryPage.SwitchToDeliveryTab();
-            deliveryPage.FillInAddress(false);
+            deliveryPage.Address = "невалидный адрес какой-то";
+            deliveryPage.FillInAddress();
             Assert.Multiple(() =>
             {
                 Assert.IsTrue(deliveryPage.IsVisibleAddressError(), "Нет предупреждения об ошибочном адресе");

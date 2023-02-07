@@ -48,8 +48,8 @@ namespace Practice1
             var choosenDays = driver.FindElements(choosenDayLocator);
             Assert.Multiple(() =>
             {
-                Assert.That(choosenDays.Count == 1, "Не выбран ни один день");
-                Assert.That(choosenDays[0].GetAttribute("data-date") == $"{futureDay}", "Выбран неправильный день");
+                Assert.AreEqual(1, choosenDays.Count, "Не выбран ни один день");
+                Assert.AreEqual($"{futureDay}", choosenDays[0].GetAttribute("data-date"), "Выбран неправильный день");
             });
         }
 
